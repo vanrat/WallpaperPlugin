@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.happy.wallpaperplugin"
+      version="1.0">
+    <name>WallpaperPlugin</name>
+    <description>Wallpaper Plugin</description>
+    <license>MIT</license>
+    <keywords>phonegap,calendar</keywords>
+ 
+    <js-module src="www/WallpaperPlugin.js" name="WallpaperPlugin">
+        <clobbers target="WallpaperPlugin" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="WallpaperPlugin">
+                <param name="android-package" value="com.happy.wallpaperplugin.WallpaperPlugin"/>
+            </feature>
+        </config-file>
+ 
+        <source-file src="src/android/WallpaperPlugin.java" target-dir="src/com/happy/wallpaperplugin" />     
+     </platform>         
+</plugin>
