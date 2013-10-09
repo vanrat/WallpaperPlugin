@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.happy.plugins"
+           id="com.happy.plugins.WallpaperPlugin"
       version="1.0">
     <name>WallpaperPlugin</name>
     <description>Wallpaper Plugin</description>
@@ -22,6 +22,6 @@
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 			<uses-permission android:name="android.permission.SET_WALLPAPER" />
 		</config-file> 
-        <source-file src="src/android/WallpaperPlugin.java" target-dir="src/com/happy/plugins" />     
+        <source-file src="src/android/WallpaperPlugin.java" target-dir="src/com/happy/plugins/WallpaperPlugin" />     
      </platform>         
 </plugin>
