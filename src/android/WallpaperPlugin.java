@@ -1,4 +1,4 @@
-package com.happy.plugins.WallpaperPlugin;
+package com.happy.plugins;
 
 import java.io.IOException;
 import java.io.InputStream;
